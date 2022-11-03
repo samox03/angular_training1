@@ -8,17 +8,17 @@
 
 <div>
   <label>Use Letters</label>
-  <input type="checkbox"/>
+  <input (change)="onChangeUseLetters()" type="checkbox"/>
 </div>
 
 <div>
   <label>Use Numbers</label>
-  <input type="checkbox"/>
+  <input (change)="onChangeUseNumbers()" type="checkbox"/>
 </div>
 
 <div>
   <label>Use Symbols</label>
-  <input type="checkbox"/>
+  <input (change)="onChangeUseSymbols()" type="checkbox"/>
 </div>
 
 <div>
@@ -27,9 +27,14 @@
 
 <div>
   <label>Your Password</label>
+<!--  use simple method calls-->
   <input [value]="getPassword()"/>
 <!--  same output would be: <input [value]="password"/> -->
 <!--  it snot necessary to provide mor infos as the property name itself is enough for angular to catch it-->
 </div>
 
-
+<!--Print out plain information-->
+<!--"interpolation"-->
+{{ password }}
+<!--Angular specific: As long this property is empty its not shown, as soon it gets filled, angular updates the page and its getting shown at this position-->
+<!--works also with methods, and just call it right away with the simple property or method name without any location additionals.-->
