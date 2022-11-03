@@ -1,8 +1,8 @@
 <h1>Password Generator</h1>
 
 <div>
-<label>Enter Length</label>
-<!--  <input (input)="onChangeLength($event.target.value)" />-->
+  <label>Enter Length</label>
+  <!--  <input (input)="onChangeLength($event.target.value)" />-->
 </div>
 
 
@@ -22,15 +22,15 @@
 </div>
 
 <div>
-<button (click)="onButtonClick()"> Generate!</button>
+  <button (click)="onButtonClick()"> Generate!</button>
 </div>
 
 <div>
   <label>Your Password</label>
-<!--  use simple method calls-->
+  <!--  use simple method calls-->
   <input [value]="getPassword()"/>
-<!--  same output would be: <input [value]="password"/> -->
-<!--  it snot necessary to provide mor infos as the property name itself is enough for angular to catch it-->
+  <!--  same output would be: <input [value]="password"/> -->
+  <!--  it snot necessary to provide mor infos as the property name itself is enough for angular to catch it-->
 </div>
 
 <!--Print out plain information-->
