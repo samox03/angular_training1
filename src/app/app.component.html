@@ -26,6 +26,10 @@
 </div>
 
 <div>
-  <button>Your Password</button>
-  <input/>
+  <label>Your Password</label>
+  <input [value]="getPassword()"/>
+<!--  same output would be: <input [value]="password"/> -->
+<!--  it snot necessary to provide mor infos as the property name itself is enough for angular to catch it-->
 </div>
+
+
